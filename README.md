@@ -11,3 +11,7 @@ drawio_default_transparency = True
 drawio_headless = True
 drawio_no_sandbox = True
 ```
+To generated html and pdf, simply run in the docs root:
+```
+docker run --rm -v `pwd`:/docs jaredweinfurtner/sphinx-drawio-docker make html latexpdf
+```
