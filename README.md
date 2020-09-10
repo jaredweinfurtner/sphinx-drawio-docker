@@ -2,7 +2,7 @@
 Sphinx with readthedocs theme &amp; drawio support
 
 ## usage
-In your _conf.py_ simply append the following for draw.io support:
+In your _conf.py_ simply append the following for headless draw.io support:
 ```
 # -- Options for draw.io plugin ----------------------------------------------
 # @see https://pypi.org/project/sphinxcontrib-drawio/
