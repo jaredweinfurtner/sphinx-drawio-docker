@@ -2,8 +2,12 @@ FROM ubuntu:20.04
 
 LABEL maintainer="jared@weinfurtner.io"
 
-WORKDIR /docs
-ADD requirements.txt /docs
+WORKDIR /install
+ADD requirements.txt /install
+ADD make.bat /install
+ADD Makefile /install
+
+RUN ls -la
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -54,3 +58,5 @@ RUN pip3 install git+https://github.com/Modelmat/sphinxcontrib-drawio@0.0.9
 
 # add other dependencies
 RUN pip3 install -r requirements.txt
+
+RUN ls -la
