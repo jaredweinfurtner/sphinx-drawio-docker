@@ -1,2 +1,4 @@
 sphinx_rtd_theme
 sphinxcontrib-drawio
+myst-parser
+sphinxcontrib-plantuml
